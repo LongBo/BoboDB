@@ -7,7 +7,7 @@ BoboFramework
 
 
 DAO层用法：
-
+<pre>
 $selector = [
     'table' => [ 'tablename1 t1'],
     'cols' => [ 'id', 'username'],
@@ -46,5 +46,5 @@ $deleter = [
     'where' => 'id=:id',
     ];
 $db->delete($deleter, [':id' => $id]);
-
+</pre>
 
