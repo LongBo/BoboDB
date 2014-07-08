@@ -1,12 +1,10 @@
 BoboFramework
 =============
 
-我自己用的PHP框架
 
 使用PDO连接数据库
 
-
-DAO层用法：
+DAO层：
 <pre>
 $selector = [
     'table' => [ 'tablename1 t1'],
