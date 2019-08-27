@@ -1,4 +1,7 @@
 <?php
+/*
+ * @ author <longbo>
+ */
 namespace common;
 
 class MyDB
@@ -31,7 +34,6 @@ class MyDB
 			$this->pdo->setAttribute(1002, 'SET NAMES utf8');
 			$this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 			$this->pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
-			// make sure that the dsn at least contains the type
 			$this->dsn = $this->getDatabaseType();
 		} else {
 			$this->dsn = $dsn;
