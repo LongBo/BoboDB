@@ -4,7 +4,7 @@
 
 使用PDO连接数据库
 
-DAO层：
+封装示例：
 <pre>
 $selector = [
     'table' => [ 'tablename1 t1'],
