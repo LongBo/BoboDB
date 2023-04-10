@@ -21,20 +21,20 @@ $result = $db->getAll($selector, [':id' => $id]);
 $inserter = [
     'table' => 'table',
     'cols' => [ 'id', 'username'],
-    'value' => [['id1', 'name1'],['id2', 'name2']]
+    'values' => [['id1', 'name1'],['id2', 'name2']]
     ];
 $db->insert($insertor, [':id' => $id], $ignore = true);
 
 $replacer = [
     'table' => 'table',
     'cols' => [ 'id', 'username'],
-    'value' => [['id1', 'name1'],['id2', 'name2']]
+    'values' => [['id1', 'name1'],['id2', 'name2']]
     ];
 $db->insert($replacer, [':id' => $id]);
 
 $updater = [
     'table' => 'table',
-    'update' => [ 'id'=>':id', 'username' => ':username'],
+    'set' => [ 'id'=>':id', 'username' => ':username'],
     'where' => 'id=:id',
     ];
 $db->update($updater, [':id' => $id]);
